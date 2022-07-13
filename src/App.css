@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+:root {
+  --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgba(255,255,255,0);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +42,48 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* ======================Navbar==================== */
+
+nav.navbar{
+  background-color: #293462;
+}
+
+/* ======================Navbar==================== */
+
+/* ======================Navlink==================== */
+
+nav a.nav-link {
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+  
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav li a {
+  color: var(--primary-white) !important;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem;
+}
+
+.navbar-nav li a:focus {
+  border-top: 0.1875rem solid var(--primary-orange);
+} 
+
+.navbar-nav li a:hover {
+  border-top: 0.1875rem solid var(--primary-orange);
+} 
+
+
+/* ======================Navlink==================== */
