@@ -7,8 +7,18 @@ import ParticlesConfig from "./particles/Config";
 import AboutMe from "./components/AboutMe";
 function App() {
   return (
-    <div>
-      <Particles className="par" params={ParticlesConfig} />
+    <div className="App">
+      <Particles
+        style={{
+          position: "absolute",
+          top: "0",
+          left: "0",
+          right: "0",
+        }}
+        className="par"
+        params={ParticlesConfig}
+      />
+
       <Navbar />
       <Header />
       <AboutMe />
