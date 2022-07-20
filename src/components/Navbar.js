@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faHandshakeAngle } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
@@ -9,7 +10,11 @@ const Navbar = () => {
           className="navbar-brand text-warning"
           href="./http://localhost:3000/"
         >
-          Ahmed abdulsalam
+          <span className="d-flex py-4">
+            <FontAwesomeIcon icon={faHandshakeAngle} />
+
+            <h4>Ahmed abdulsalam</h4>
+          </span>
         </a>
         <button
           className="navbar-toggler"

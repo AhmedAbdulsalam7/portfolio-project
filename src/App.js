@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Particles from "react-tsparticles";
 import ParticlesConfig from "./particles/Config";
 import AboutMe from "./components/AboutMe";
+import { Services } from "./components/Services";
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,7 @@ function App() {
       <Navbar />
       <Header />
       <AboutMe />
+      <Services />
     </div>
   );
 }
